@@ -1,0 +1,36 @@
+{
+  "Version": 1,
+  "ProjectMap": {
+    "9396727b-0639-48e5-811a-7d93581a362a": {
+      "ProjectGuid": "9396727b-0639-48e5-811a-7d93581a362a",
+      "DisplayName": "GameGRUD",
+      "ColorIndex": 0
+    },
+    "b77ab702-de48-446e-ac56-51fc8b2160cb": {
+      "ProjectGuid": "b77ab702-de48-446e-ac56-51fc8b2160cb",
+      "DisplayName": "Solution Items",
+      "ColorIndex": 1
+    },
+    "acf9596c-6cd0-4a25-a03a-1d8ab9a4be4d": {
+      "ProjectGuid": "acf9596c-6cd0-4a25-a03a-1d8ab9a4be4d",
+      "DisplayName": "GameData",
+      "ColorIndex": 2
+    },
+    "c749e126-fae9-4516-847e-493672dc4380": {
+      "ProjectGuid": "c749e126-fae9-4516-847e-493672dc4380",
+      "DisplayName": "GameDataService",
+      "ColorIndex": 3
+    },
+    "a2fe74e1-b743-11d0-ae1a-00a0c90fffc3": {
+      "ProjectGuid": "a2fe74e1-b743-11d0-ae1a-00a0c90fffc3",
+      "DisplayName": "Прочие файлы",
+      "ColorIndex": -1
+    },
+    "4e981c5c-5a7c-4f30-90d4-eda79339aebb": {
+      "ProjectGuid": "4e981c5c-5a7c-4f30-90d4-eda79339aebb",
+      "DisplayName": "GameUnitTestsApp",
+      "ColorIndex": 4
+    }
+  },
+  "NextColorIndex": 5
+}
