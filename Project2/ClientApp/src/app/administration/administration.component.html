@@ -1,0 +1,21 @@
+<form>
+    <p>Администрирование</p>
+    <nav class="navbar navbar-expand-sm navbar-toggleable-sm navbar-light bg-white border-bottom box-shadow mb-3">
+        <ul class="navbar-nav flex-grow">
+            <li class="nav-item" [routerLinkActive]="['link-active']">
+              <a class="nav-link text-dark" [routerLink]="['/admin-panel/categories']"
+                >Категории</a>
+            </li>
+            <li class="nav-item" [routerLinkActive]="['link-active']">
+                <a class="nav-link text-dark" [routerLink]="['/admin-panel/units']"
+                  >Единицы измерения</a>
+              </li>
+          
+          </ul>
+    </nav>
+    <div class="container">
+        <router-outlet></router-outlet>
+      </div>
+    
+</form>
+
