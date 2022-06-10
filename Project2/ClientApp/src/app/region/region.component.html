@@ -1,0 +1,39 @@
+<p>Регионы</p><p (click)="Show()">Меню</p>
+<p *ngIf="!regions"><em>Loading...</em></p>
+
+<table class='table table-striped' aria-labelledby="tableLabel" *ngIf="regions">
+  <thead>
+    <tr>
+      <th>Id</th>
+      <th>Название</th>
+     
+    </tr>
+  </thead>
+  <tbody>
+    <tr *ngFor="let region of regions">
+       
+      <td>{{ region.id }}</td>
+      <td (click)="Select(region.id , $event)">{{ region.regionName }}</td>
+      
+       
+      </tr>
+  </tbody>
+</table>
+<div class="object-menu" *ngIf="key" >
+  
+  <div class="object-menu-panel">
+    <label style="margin-left: 90%;" for="" (click)="ClosePanel()">X</label>
+    
+    <p>Регион</p>
+    <div>
+      <input title="category-name" type="text" value = {{selectedRegion?.regionName}}>
+    </div>
+    <div>
+      <label class="chang-btn" (click)="Change()">Изменить</label>
+    </div>
+    <div class = "bottom-panel">
+      <label for="" class="buttons">Добавить</label>
+      <label for="" class="buttons">Удалить</label>
+    </div>
+  </div>
+</div>

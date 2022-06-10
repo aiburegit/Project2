@@ -1,1 +1,66 @@
-<p>product works!</p>
+<p>Продукция</p>
+
+<nav class="nav-bar">
+    <ul><li>Сортировать</li><li>Категория 
+        <select title="q"  >
+            <option *ngFor="let category of categories">{{category.categoryName}}</option>
+        </select>
+    </li></ul>
+</nav>
+<table class='table table-striped' aria-labelledby="tableLabel" *ngIf="products">
+    <thead>
+      <tr>
+        <th>Id</th>
+        <th>Название</th>
+        <th>Цена</th>
+        <th>Кол.во</th>
+        <th>Ед.изм</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr *ngFor="let product of products">
+         
+        <td>{{ product.id }}</td>
+        <td (click)="Select(product.id , $event)">{{ product.productName }}</td>
+        <td (click)="Select(product.id , $event)">{{ product.productPrice }}</td>
+        <td (click)="Select(product.id , $event)">{{ product.productCount}}</td>
+        <td (click)="Select(product.id , $event)">{{ product?.unit?.unitName }}</td>
+        <td><a></a></td>
+        </tr>
+    </tbody>
+  </table>
+  <div class="object-menu" *ngIf="key" >
+    
+    <div class="object-menu-panel">
+      <label style="margin-left: 90%;" for="" (click)="ClosePanel()">X</label>
+      
+      
+      <div>
+        <p>Продукт:</p>
+        <input title="category-name" type="text" value = {{selectedProduct?.productName}}>
+      </div>
+      <div>
+        <p>Категория:</p>
+        <input title="category-name" type="text" value = {{selectedProduct?.category?.categoryName}}>
+      </div>
+      <div>
+        <p>Описание:</p>
+        <textarea class="descript" title = "description">{{selectedProduct?.productDescription}}</textarea>
+      </div>
+      <div>
+        <p>Цена:</p>
+        <input title="category-name" type="text" value = {{selectedProduct?.productPrice}}>
+      </div>
+      <select class="qwe" title="qwe" value = {{selectedProduct?.unit?.unitName}} >
+        <option *ngFor="let unit of units">{{unit.unitName}}</option>
+    </select>
+      
+      <div>
+        <label class="chang-btn" (click)="Change()">Изменить</label>
+      </div>
+      <div class = "bottom-panel">
+        <label for="" class="buttons">Добавить</label>
+        <label for="" class="buttons">Удалить</label>
+      </div>
+    </div>
+  </div>

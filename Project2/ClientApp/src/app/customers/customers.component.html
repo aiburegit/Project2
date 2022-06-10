@@ -1,1 +1,40 @@
-<p>customers works!</p>
+<p>Заказчики</p>
+<nav class="nav-bar">
+    <ul><li>К заказам:</li><li>Сортировать</li><li>Сменить регион</li></ul>
+</nav>
+<table class='table table-striped' aria-labelledby="tableLabel" *ngIf="customers">
+    <thead>
+      <tr>
+        <th>Id</th>
+        <th>Название</th>
+        <th>Регион</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr *ngFor="let customer of customers">
+         
+        <td>{{ customer.id }}</td>
+        <td (click)="Select(customer.id , $event)">{{ customer.customerName }}</td>
+        <td>{{customer.customerRegion.regionName}}</td>
+         
+        </tr>
+    </tbody>
+  </table>
+  <div class="object-menu" *ngIf="key" >
+    
+    <div class="object-menu-panel">
+      <label style="margin-left: 90%;" for="" (click)="ClosePanel()">X</label>
+      
+      <p>Регион</p>
+      <div>
+        <input title="category-name" type="text" value = {{selectedCustomer?.customerName}}>
+      </div>
+      <div>
+        <label class="chang-btn" (click)="Change()">Изменить</label>
+      </div>
+      <div class = "bottom-panel">
+        <label for="" class="buttons">Добавить</label>
+        <label for="" class="buttons">Удалить</label>
+      </div>
+    </div>
+  </div>

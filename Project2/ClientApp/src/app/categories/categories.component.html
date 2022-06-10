@@ -1,4 +1,4 @@
-<p>categories works!</p>
+<p>Категории</p><p>Меню</p>
 <p *ngIf="!categories"><em>Loading...</em></p>
 
 <table class='table table-striped' aria-labelledby="tableLabel" *ngIf="categories">
@@ -11,10 +11,32 @@
   </thead>
   <tbody>
     <tr *ngFor="let category of categories">
-        <td>{{ category.id }}</td>
-      <td>{{ category.categoryName }}</td>
+       
+      <td>{{ category.id }}</td>
+      <td (click)="Select(category.id , $event)">{{ category.categoryName }}</td>
       <td>{{ category.categoryDescription}}</td>
-      <td><label (click)="Delete(category.id)">Удалить</label></td>
-    </tr>
+       
+      </tr>
   </tbody>
 </table>
+<div class="object-menu" *ngIf="key" >
+  
+  <div class="object-menu-panel">
+    <label style="margin-left: 90%;" for="" (click)="ClosePanel()">X</label>
+    <p>Описание:</p>
+    <div>
+      <textarea class="descript" title = "description">{{selectedCetegory?.categoryDescription}}</textarea>
+    </div>
+    <p>Название категории</p>Такая категория уже существует
+    <div>
+      <input title="category-name" type="text" value = {{selectedCetegory?.categoryName}}>
+    </div>
+    <div>
+      <label class="chang-btn" (click)="Change()">Изменить</label>
+    </div>
+    <div class = "bottom-panel">
+      <label for="" class="buttons">Добавить</label>
+      <label for="" class="buttons">Удалить</label>
+    </div>
+  </div>
+</div>

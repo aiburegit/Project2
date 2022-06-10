@@ -1,0 +1,128 @@
+body{
+    background-color: rgb(27, 100, 148);
+}
+.imageBlock{
+    
+    position: relative;
+    width: 60vh;
+    height: 70vh;
+    float: left;
+    margin-left: 5vh;
+    margin-top: 5vh;
+    box-shadow: 0px 0px 5px 0.2px grey;
+}
+.statsBlock{
+    box-shadow: 0px 0px 5px 0.2px grey;
+    width: 80vh;
+    height: 90vh;
+    position: relative;
+    float: left;
+    margin-left: 15vh;
+    margin-top: 5vh;
+    
+}
+.statsBlock p{
+    margin-left: 2vh;
+}
+.colors{
+    width: 100%;
+    height: 5vh;
+    box-shadow: 0px 0px 5px 0.2px grey;
+    
+}
+.colors div{
+    width: 5vh;
+    height: 5vh;
+    display: inline-block;
+    margin-left: 3vh;
+    border-radius: 10px;
+   
+   
+}
+.color1{
+    background-color: grey;
+    border:solid dodgerblue;
+}
+.color2{
+    background-color: blue;
+    
+}
+.stats{
+    width: 50%;
+    height: 50%;
+    box-shadow: 0px 0px 5px 0.2px grey;
+    margin-left: auto;
+    margin-right: auto;
+    margin-top: 3vh;
+}
+.stats p
+{
+  background-color: dodgerblue;  
+  font-size: 2vh;
+}
+.stats{
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+}
+.stat{
+    box-shadow: 0px 0px 5px 0.2px grey;
+    margin-top: 2vh;
+    font-size: 2vh;
+    
+}
+.name{
+    
+}
+.value{
+    
+}
+.item-name{
+    font-size: 4vh;
+}
+.color{
+    font-size: 2vh;
+}
+.main-image{
+    
+}
+.main-image img{
+    width: 70%;
+}
+.image-panel{
+    box-shadow: 0px 0px 5px 0.2px grey;
+    width:100%;
+    background-color: white;
+    text-align: center;
+    margin-top: 1vh;
+}
+.image-panel img{
+    width: 10vh;
+    height: 10vh;
+    
+}
+.image-panel div{
+    display: inline-block;
+    box-shadow: 0px 0px 5px 0.2px grey;
+    margin-left: 3vh;
+}
+.p1{
+    border: solid;
+    border-color: dodgerblue;
+}
+.buy-btn{
+    margin-top: 3vh;
+   
+    box-shadow: 0px 0px 5px 0.2px grey;
+    background-color: dodgerblue;
+    margin-left: auto;
+    margin-right: auto;
+    width: 20vh;
+    height: 7vh;
+   vertical-align: middle;
+    
+}
+.buy-btn p{
+    font-family:'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    font-size: 3vh;
+    text-align: center;
+    margin: auto;
+}

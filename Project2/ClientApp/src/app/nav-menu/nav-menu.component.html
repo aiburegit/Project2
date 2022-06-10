@@ -20,33 +20,28 @@
         [ngClass]="{ show: isExpanded }"
       >
         <ul class="navbar-nav flex-grow">
-          <li
-            class="nav-item"
-            [routerLinkActive]="['link-active']"
-            [routerLinkActiveOptions]="{ exact: true }"
-          >
-            <a class="nav-link text-dark" [routerLink]="['/']">Home</a>
-          </li>
+          
           <li class="nav-item" [routerLinkActive]="['link-active']">
-            <a class="nav-link text-dark" [routerLink]="['/admin-panel']"
+            <a class="nav-link text-dark" [routerLink]="['/admin/admin-panel']"
               >Администрирование</a
             >
           </li>
           <li class="nav-item" [routerLinkActive]="['link-active']">
-            <a class="nav-link text-dark" [routerLink]="['/customers']"
+            <a class="nav-link text-dark" [routerLink]="['/admin/customers']"
               >Заказчики</a
             >
           </li>
           <li class="nav-item" [routerLinkActive]="['link-active']">
-            <a class="nav-link text-dark" [routerLink]="['/products']"
+            <a class="nav-link text-dark" [routerLink]="['/admin/products']"
               >Продукты</a
             >
           </li>
           <li class="nav-item" [routerLinkActive]="['link-active']">
-            <a class="nav-link text-dark" [routerLink]="['/fetch-data']"
-              >Fetch data</a
+            <a class="nav-link text-dark" [routerLink]="['/admin/orders']"
+              >Заказы</a
             >
           </li>
+        
         </ul>
       </div>
     </div>

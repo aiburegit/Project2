@@ -1,0 +1,38 @@
+
+<body>
+<link rel="stylesheet" href="//code.jquery.com/ui/1.12.1/themes/base/jquery-ui.css">
+<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+<script src="https://code.jquery.com/ui/1.12.1/jquery-ui.js"></script>
+<div class = "filter-box">
+    <div>
+        <p>Категория: Пылесосы</p>
+    </div>
+<div class="priceroll">
+<div class="bl">
+<div class="ot">От:<p id ="ot"></p></div>
+<div class="do">До:<p id = "do"></p></div>
+</div>
+<div id="slider-range"></div>
+</div>
+<div *ngFor="let param of Params">
+
+    <p>Потребляемая мощность</p>
+    <div *ngFor="let pow of param.Power"><input title="noise" type="checkbox">{{pow}}</div>
+    <p>Мощность всасывания</p>
+    <div *ngFor="let sPower of param.SuctionPower"><input title="noise" type="checkbox">{{sPower}}</div>
+    <p>Тип бака</p>
+    <div *ngFor="let tank of param.TankType"><input title="noise" type="checkbox">{{tank}}</div>
+    <p>Уровень шума</p>
+    <div *ngFor="let noise of param.NoiseLvl"><input title="noise" type="checkbox">{{noise}}</div>
+</div>
+</div>
+<div class="main-content">
+    <div class="items-box">
+        <div class="item" *ngFor="let item of Items">
+            <img src="{{item.ImageUrl}}" alt="img">
+            <p class="name">{{item.Name}}</p>
+            <p class="price">{{item.Price}}</p>
+        </div>
+    </div>
+</div>
+</body>

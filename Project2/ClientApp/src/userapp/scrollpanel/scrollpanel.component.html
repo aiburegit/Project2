@@ -1,0 +1,14 @@
+
+
+<div class="scrollPanel">
+    <button class="btn-left" (click)="left()"><img src="../../assets/images/arrow.png" alt="<"></button>
+    <div class="elements">
+    <div class="scrollElement" *ngFor="let item of ScrollElements">
+        <img src="../../assets/images/wood.png" alt="wood" class="img">
+        <div><p>{{item.name}}</p></div>
+    </div>
+    </div>
+    <button class="btn-right" (click)="right()"><img src="../../assets/images/arrow.png" alt=">"></button>
+</div>
+
+

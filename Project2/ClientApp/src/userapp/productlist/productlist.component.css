@@ -1,0 +1,90 @@
+.priceroll{
+    width: 300px;
+    
+}
+.ot{
+    display: inline-block;
+    float: left;
+    position: relative;
+}
+.do{
+    display: inline-block;
+    float: right;
+    position: relative;
+}
+.priceroll p{
+    
+}
+.slider-range{
+    display: block;
+}
+.bl{
+    display: inline-block;
+    width: 300px;
+}
+.filter-box{
+    background-color: white;
+    width: 300px;
+    display:block;
+    vertical-align: top;
+    float: left;
+    border-radius: 10px;
+    box-shadow: 0px  0px  5px 1px grey;
+    text-align: justify;
+    margin-left: 4vh;
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+}
+.item{
+    width:23vh;
+    height: 30vh;
+    box-shadow: 0px  0px  5px  rgb(213, 211, 211);
+    display: inline-block;
+    background-color: white;
+    margin-left: 3vh;
+    border-radius: 10px;
+    margin-top: 3vh;
+    text-align: center;
+}
+.item:hover{
+    transform: scale(1.2);
+}
+.item img{
+    width:70%;
+    height: 50%;
+}
+.main-content{
+    display: block;
+    width: 1200px;
+    height: 1200px;
+    overflow: auto;
+    margin-left:auto;
+    margin-right: auto;
+}
+.name{
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+    font-size: 2vh;
+}
+.price{
+    margin-top: 4vh;
+    font-size: 3vh;
+}
+.filter-box input{
+    margin-right: 1vh;
+    margin-left: 4vh;
+}
+.filter-box p{
+    margin-top: 2vh;
+    box-shadow: 0px 4px 0px dodgerblue;
+}
+*::-webkit-scrollbar {
+    height: 4px;
+    width: 12px;
+  }
+  *::-webkit-scrollbar-track {
+    background: orange;
+  }
+  *::-webkit-scrollbar-thumb {
+    background-color: dodgerblue;
+    border-radius: 5px;
+    border: 3px solid white;
+  }

@@ -1,0 +1,67 @@
+.object-menu{
+    position: fixed;
+    top: 20vh;
+    left: 70%;
+    right: 0;   
+    width: 60px;
+    height: 60px;
+    margin-bottom: 50%;
+}
+.object-menu-panel{
+    width: 40vh;
+    
+    background-color: azure;
+    border-width: 30px;
+    border-color: black;
+}
+.object-menu-panel .descript{
+    width: 80%;
+    height: 30%;
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    resize: none;
+    overflow-y: auto;
+}
+.object-menu-panel input{
+    width: 80%;
+    height: 30%;
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    resize: none;
+    overflow-y: auto;
+    
+}
+.buttons{
+    background-color: darkgray;
+    font-size: large;
+    margin-left: 5%;
+    margin-top: 10%
+}
+.bottom-panel{
+    margin-left: auto;
+    margin-right: auto;
+    width: 30%;
+}
+.chang-btn{
+    margin-left: 70%;
+    background-color: darkgray;
+}
+.nav-bar{
+
+}
+.nav-bar ul{
+    flex-grow:inherit;
+    box-shadow: 0.4em 0.4em 5px rgba(122,122,122,0.5);
+}
+.nav-bar li{
+    display: inline-block;
+    height: 5vh;
+    margin-left: 5vh;
+    text-align:center;
+    
+}
+.qwe{
+    margin-left: 10%;
+}

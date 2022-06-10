@@ -1,0 +1,26 @@
+
+<body>
+<div class="imageBlock">
+    <div class="main-image">
+        <img src ="../../assets/images/pngegg (1).png" alt = "photo">
+    </div>
+    <div class="image-panel">
+        <div class="p1"><img src ="../../assets/images/pngegg (1).png" alt = "photo"></div>
+        <div class="p2"><img src ="../../assets/images/pngegg (2).png" alt = "photo"></div>
+        <div class="p3"><img src ="../../assets/images/pngegg (3).png" alt = "photo"></div>
+    </div>
+</div>
+<div class="statsBlock">
+    <p class="item-name"> Стиральная машина !"3132шо321-123123</p>
+    <p class="color">Цвет</p>
+    <div class="colors"><div class="color1"></div> <div class="color2"></div></div>
+    
+    <div class="stats">
+        <p>Характеристики</p>
+        <div class="stat" *ngFor="let stat of Stats">
+            <div class="name">{{stat.name}}</div><div class="value">{{stat.value}}</div>
+        </div>
+    </div>
+    <div class="buy-btn"><p>Приобрести</p></div>
+</div>
+</body>

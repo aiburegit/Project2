@@ -1,0 +1,16 @@
+<body>
+<table>
+    <tr *ngFor="let category of Categories">
+        
+        <div class="categoryType">{{category.TypeName}}</div>
+        <div class="items">
+        <td *ngFor="let item of category.Categories">
+            <div class="categoryBlock">
+                <img class="img" src = "{{item.PhotoUrl}}" alt = "photo">
+                <p>{{item.Name}}</p>
+            </div>
+        </td>
+        </div>
+    </tr>
+</table>
+</body>

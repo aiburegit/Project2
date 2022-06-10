@@ -1,1 +1,40 @@
-<p>units works!</p>
+
+<p>Категории</p><p>Меню</p>
+<p *ngIf="!units"><em>Loading...</em></p>
+
+<table class='table table-striped' aria-labelledby="tableLabel" *ngIf="units">
+  <thead>
+    <tr>
+      <th>Id</th>
+      <th>Название</th>
+     
+    </tr>
+  </thead>
+  <tbody>
+    <tr *ngFor="let unit of units">
+       
+      <td>{{ unit.id }}</td>
+      <td (click)="Select(unit.id , $event)">{{ unit.unitName }}</td>
+      
+       
+      </tr>
+  </tbody>
+</table>
+<div class="object-menu" *ngIf="key" >
+  
+  <div class="object-menu-panel">
+    <label style="margin-left: 90%;" for="" (click)="ClosePanel()">X</label>
+    
+    <p>Название категории</p>
+    <div>
+      <input title="category-name" type="text" value = {{selectedUnit?.unitName}}>
+    </div>
+    <div>
+      <label class="chang-btn" (click)="Change()">Изменить</label>
+    </div>
+    <div class = "bottom-panel">
+      <label for="" class="buttons">Добавить</label>
+      <label for="" class="buttons">Удалить</label>
+    </div>
+  </div>
+</div>

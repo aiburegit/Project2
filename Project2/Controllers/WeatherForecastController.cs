@@ -1,6 +1,8 @@
 ﻿using Microsoft.AspNetCore.Mvc;
 using Microsoft.EntityFrameworkCore;
-using Project2.DataEntities;
+using Project2.Data;
+using Project2.Data.DataEntities;
+
 namespace Project2.Controllers
 {
     
@@ -12,8 +14,8 @@ namespace Project2.Controllers
     };
 
         private readonly ILogger<WeatherForecastController> _logger;
-        private MyDbContext context;
-        public WeatherForecastController(ILogger<WeatherForecastController> logger , MyDbContext con)
+        private DataBaseContext context;
+        public WeatherForecastController(ILogger<WeatherForecastController> logger ,DataBaseContext con)
         {
             _logger = logger;
             context = con;

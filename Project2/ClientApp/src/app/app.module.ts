@@ -16,11 +16,14 @@ import { OrderComponent } from './order/order.component';
 import { UnitsComponent } from './units/units.component';
 import { CategoriesComponent } from './categories/categories.component';
 import { DataBaseRequestService } from './data-request/data-request.component';
+import { RegionComponent } from './region/region.component';
+
 
 
 const itemRoutes: Routes = [
   { path: 'categories', component: CategoriesComponent},
   { path: 'units', component: UnitsComponent},
+  {path: 'regions', component: RegionComponent}
 ];
 @NgModule({
   declarations: [
@@ -34,6 +37,7 @@ const itemRoutes: Routes = [
     OrderComponent,
     UnitsComponent,
     CategoriesComponent,
+    RegionComponent
   ],
   imports: [
     BrowserModule.withServerTransition({ appId: 'ng-cli-universal' }),
