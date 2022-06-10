@@ -1,0 +1,12 @@
+C:\Users\aibure\source\repos\Project2.Data\bin\Debug\net6.0\Project2.Data.deps.json
+C:\Users\aibure\source\repos\Project2.Data\bin\Debug\net6.0\Project2.Data.dll
+C:\Users\aibure\source\repos\Project2.Data\bin\Debug\net6.0\ref\Project2.Data.dll
+C:\Users\aibure\source\repos\Project2.Data\bin\Debug\net6.0\Project2.Data.pdb
+C:\Users\aibure\source\repos\Project2.Data\obj\Debug\net6.0\Project2.Data.csproj.AssemblyReference.cache
+C:\Users\aibure\source\repos\Project2.Data\obj\Debug\net6.0\Project2.Data.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\aibure\source\repos\Project2.Data\obj\Debug\net6.0\Project2.Data.AssemblyInfoInputs.cache
+C:\Users\aibure\source\repos\Project2.Data\obj\Debug\net6.0\Project2.Data.AssemblyInfo.cs
+C:\Users\aibure\source\repos\Project2.Data\obj\Debug\net6.0\Project2.Data.csproj.CoreCompileInputs.cache
+C:\Users\aibure\source\repos\Project2.Data\obj\Debug\net6.0\Project2.Data.dll
+C:\Users\aibure\source\repos\Project2.Data\obj\Debug\net6.0\ref\Project2.Data.dll
+C:\Users\aibure\source\repos\Project2.Data\obj\Debug\net6.0\Project2.Data.pdb
